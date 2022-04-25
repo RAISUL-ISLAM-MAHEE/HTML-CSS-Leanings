@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css" media="all">
+  
+    .cascading2{
+      color: red;
+    }
+    .cascading2{
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <!-- See css file for the explaination-->
+<p class="cascading1"> This line is to test Cascading1 </p>
+
+<!-- The value in style.css won't be reflecting because link-css is above the style tage in head tag. Values of style.css will only reflect if it is moved under style tag, by doing so the value of style.css will be the folling of the value of style tag. And we know that the last selector gets the priority. --> 
+<p class="cascading2"> This line is to test Cascading2 </p>
+
+<!-- style attribute in a tag has the most specificity value. That is why it is selected. Google css-tricks.com css specificity for more information . -->
+<p class="specificity" style="color: red">This line is to test Specificity</p>
+
+
+<p>This is just a line for the comparison</p>
+
+<!-- The value inherit will reflect the value of the parent element. Here body tag is the parent of p tag. So the p tag will reflect the value of body. -->
+<p class="inherit">The line is to test Inherit</p>
+
+<!-- Initial reflects the initial value and the initial value for the property color is black. Google the initial value of properties for more information. -->
+<p class="initial">The line is to test Initial</p>
+
+<!-- Unset picks between intial or inherit. It depends on the property wether initail or inherit will be selected. Unset of the property color is inherit. Google the unset values for more infornation.-->
+<p class="unset">The line is to test unset</p>
+
+<!-- See css file for the explaination-->
+<p class="important" style="color: aqua;">This line is to test !important</p>
+
+</body>
+</html>

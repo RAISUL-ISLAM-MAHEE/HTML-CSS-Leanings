@@ -1,0 +1,45 @@
+/* Cascading: Importance of order. If multiple selectors hace the same value then the last selector will work */
+
+.cascading1{
+  color: red;
+}
+.cascading1{
+  color: blue;
+}
+
+.cascading1{
+  color: green;
+}
+
+
+.cascading2{
+  color: black;
+}
+
+/* Specificity: The selector which is more specific will get the priority. It depends on the value of specificity. The more the value of specificity the more priority it gets. Hover over the selector in vs code to see the specificity value of the selector */
+
+.specificity1{
+  color: black;
+}
+
+
+body{
+  color: tomato;
+}
+
+.inherit{
+  color: inherit;
+}
+
+.initial{
+  color: initial;
+}
+
+.unset{
+  color: unset;
+}
+
+/* !important will over-ride other values of that property. It has the specificity value of 1000*/
+P.important{
+  color: bisque !important;
+}
