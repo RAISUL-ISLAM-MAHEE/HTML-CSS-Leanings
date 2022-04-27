@@ -1,0 +1,47 @@
+
+.box{
+  background-color: lightcyan;
+  background-color: 
+border: 3px solid black;
+width: 200px;
+height: 100px;
+
+  
+}
+
+.boxVisible{
+  background-color: bisque;
+  overflow: visible;
+border: 3px solid black;
+width: 500px;
+height: 20px;
+
+  
+}
+
+.boxHidden{
+  background-color: azure;
+  overflow: hidden;
+border: 3px solid black;
+width: 500px;
+height: 20px;
+}
+
+.boxScroll{
+  background-color: gray;
+  overflow: scroll;
+border: 3px solid black;
+width: 400px;
+height: 40px;
+  
+}
+
+.boxAuto{
+  background-color: tomato;
+  overflow: auto;
+border: 3px solid black;
+width: 500px;
+height: 50px;
+
+  
+}
