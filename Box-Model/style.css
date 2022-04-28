@@ -1,0 +1,21 @@
+*{
+  text-align: center;
+}
+
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: tomato;
+  margin: 60px;
+  padding: 10px;
+  border: 10px solid grey;
+
+}
+
+.button{
+  background-color: aquamarine;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 60px;
+}
