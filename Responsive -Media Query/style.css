@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font: 14px Georgia, serif;
+  background: #ccc;
+}
+
+.emails{
+  display: block;
+  
+}
+
+h3{
+  margin: 0 0 8px 0;
+}
+p{
+  margin: 0 0 20px 0;
+}
+
+.content{
+  width: 85%;
+  margin: 60px auto;
+  padding: 20px;
+  background: #eee;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sidebar{
+  width: 35%;
+  float: left;
+}
+.sidebar ul{
+  list-style: none;
+}
+
+.sidebar ul li a{
+
+  color: #901;
+  text-decoration: none;
+  padding: 3px 0;
+  display: block;
+  
+}
+
+@media all and (min-width: 970px){
+
+.sidebar ul li a:after{
+  content: "(" attr(data-email) ")";
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 2px;
+  color: #666;
+}
+
+}  
+@media all and (min-width: 600px) and (max-width: 969px){
+.sidebar ul li a:before{
+  content:"Email:";
+  font-style: italic;
+  padding-right: 3px;
+  color: #666;
+}
+  
+}
+
+@media all and (min-width: 360px) and (max-width: 599px), all and (min-width: 971px){
+  
+  .sidebar ul li a {
+    padding: 19px;
+  background: url("/Responsive -Media Query/584856b4e0bb315b0f7675ac.png") left center no-repeat;
+  background-size: 20px;
+}
+  
+}
+
+.mainContent{
+  width: 65%;
+  float: right;
+}
