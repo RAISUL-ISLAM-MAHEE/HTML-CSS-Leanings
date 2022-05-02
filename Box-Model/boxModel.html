@@ -6,6 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
   <title></title>
+  
+  <style type="text/css" media="all">
+    *{
+  text-align: center;
+}
+
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: tomato;
+  margin: 60px;
+  padding: 10px;
+  border: 10px solid grey;
+
+}
+
+.button{
+  background-color: aquamarine;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 60px;
+}
+div{
+  height: 80px;
+  width: 160px;
+  padding: 20px;
+  border: 8px solid gray;
+  margin: 10px;
+  background-color: #00bcd4;
+}
+div.box2{
+  box-sizing: content-box;
+}
+/* Content-box is the default value of box sizing. it adds the padding and border to the main content thus making the content box larger.
+Total width = content-box_width(160px) + padding(2 x 20) + border( 2 x 8) = 216px
+ Total width = content-box_height(80px) + padding(2 x 20) + border( 2 x 8) = 136px
+*/
+div.box3{
+  box-sizing: border-box;
+}
+/* Border-box substracs the padding and border to the main content. This  makes the total width and height identical to the original content box, but cuts down the width and height of the main content.
+Final width of content = content-box_width(160px) - padding(2 x 20) - border( 2 x 8) = 104px
+ Final height of content = content-box_height(80px) - padding(2 x 20) - border( 2 x 8) =24px
+*/
+  </style>
 </head>
 
 <body>
@@ -14,6 +60,15 @@
 <input class="button" type="submit" name="Submit" id="" value="Submit" >
 
 <p class="box">This is a Box Model</p>
+
+<div class="box2">
+  Content Box
+</div>
+<div class="box3">
+  Content Box
+</div>
+
+
 
 </body>
 
