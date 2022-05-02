@@ -38,7 +38,7 @@ This will not change the color of the text to red until the screen width hits ex
 
 ## Operators:
 
-1. "and" operator is used to implement multiple condition and all of them have satisfy the condition for the change to occur.
+### 1. "and" operator is used to implement multiple condition and all of them have satisfy the condition for the change to occur.
 
 Ex:
 @media screen and (max-width:600px) and (orientation: landscape){
